@@ -1,0 +1,33 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST localhost:8080/projects
+Content-Type: application/json
+Accept-Language: en
+
+{
+  "code": "black&white11",
+  "projectType": "public"
+}
+
+###
+POST localhost:8080/projects
+Content-Type: text/csv
+
+hello,PUBLIC
+
+###
+GET localhost:8080/projects/black&white
+
+###
+GET localhost:8080/projects
+
+###
+GET localhost:8080/projects/black&white
+Accept: text/csv
+
+###
+GET localhost:8080/projects
+Accept: text/csv

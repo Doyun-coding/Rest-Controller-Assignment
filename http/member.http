@@ -1,0 +1,51 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST localhost:8080/members
+Content-Type: application/json
+Accept-Language: en
+
+{
+  "id": "21",
+  "name": "JaeSuk",
+  "age": "50",
+  "class": "A"
+}
+
+###
+POST localhost:8080/members
+Content-Type: text/csv
+
+22,18,18,A
+
+
+###
+GET localhost:8080/members/1
+
+###
+GET localhost:8080/members/1
+Accept: text/csv
+
+###
+GET localhost:8080/members
+
+###
+GET localhost:8080/members
+Accept: text/csv
+
+###
+POST localhost:8080/members
+Content-Type: application/json
+Accept-Language: en
+
+###
+POST localhost:8080/projects/hello/member/22
+Content-Type: application/json
+Accept-Language: en
+
+###
+GET localhost:8080/projects/hello
+Content-Type: application/json
+Accept-Language: en
